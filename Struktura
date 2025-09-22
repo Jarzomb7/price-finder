@@ -1,0 +1,6 @@
+price-finder/
+│── api/
+│   └── prices.js
+│── package.json
+│── vercel.json
+│── index.html
