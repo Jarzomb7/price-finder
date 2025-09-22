@@ -1,7 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/prices.js", "use": "@vercel/node" },
-    { "src": "index.html", "use": "@vercel/static" }
-  ]
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 20,
+      "memory": 1536
+    }
+  }
 }
